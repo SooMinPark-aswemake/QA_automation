@@ -1,0 +1,1478 @@
+versions pytest-8.3.4, python-3.13.1.final.0
+invocation_dir=/Users/smpark/my_project
+cwd=/Users/smpark/my_project
+args=('--debug',)
+
+  pytest_cmdline_main [hook]
+      config: <_pytest.config.Config object at 0x1035c9fd0>
+    pytest_plugin_registered [hook]
+        plugin: <Session  exitstatus='<UNSET>' testsfailed=0 testscollected=0>
+        plugin_name: session
+        manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+    finish pytest_plugin_registered --> [] [hook]
+    pytest_configure [hook]
+        config: <_pytest.config.Config object at 0x1035c9fd0>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x10421a270>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x10421aba0>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: faulthandler [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+    early skip of rewriting module: pdb [assertion]
+    early skip of rewriting module: cmd [assertion]
+    early skip of rewriting module: code [assertion]
+    early skip of rewriting module: codeop [assertion]
+    early skip of rewriting module: rlcompleter [assertion]
+    early skip of rewriting module: readline [assertion]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x10340f380>
+          plugin_name: 4349555584
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x1035c9fd0>
+          plugin_name: pytestconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/mark/__init__.py'>
+          plugin_name: mark
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/main.py'>
+          plugin_name: main
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/runner.py'>
+          plugin_name: runner
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/fixtures.py'>
+          plugin_name: fixtures
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/helpconfig.py'>
+          plugin_name: helpconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/python.py'>
+          plugin_name: python
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/terminal.py'>
+          plugin_name: terminal
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/debugging.py'>
+          plugin_name: debugging
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/unittest.py'>
+          plugin_name: unittest
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/capture.py'>
+          plugin_name: capture
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/skipping.py'>
+          plugin_name: skipping
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/legacypath.py'>
+          plugin_name: legacypath
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/tmpdir.py'>
+          plugin_name: tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/monkeypatch.py'>
+          plugin_name: monkeypatch
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/recwarn.py'>
+          plugin_name: recwarn
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/pastebin.py'>
+          plugin_name: pastebin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/assertion/__init__.py'>
+          plugin_name: assertion
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/junitxml.py'>
+          plugin_name: junitxml
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/doctest.py'>
+          plugin_name: doctest
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/cacheprovider.py'>
+          plugin_name: cacheprovider
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/freeze_support.py'>
+          plugin_name: freeze_support
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/setuponly.py'>
+          plugin_name: setuponly
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/setupplan.py'>
+          plugin_name: setupplan
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/stepwise.py'>
+          plugin_name: stepwise
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/warnings.py'>
+          plugin_name: warnings
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/logging.py'>
+          plugin_name: logging
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/reports.py'>
+          plugin_name: reports
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/python_path.py'>
+          plugin_name: python_path
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/unraisableexception.py'>
+          plugin_name: unraisableexception
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/threadexception.py'>
+          plugin_name: threadexception
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/faulthandler.py'>
+          plugin_name: faulthandler
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_playwright.pytest_playwright' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/pytest_playwright/pytest_playwright.py'>
+          plugin_name: playwright
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_base_url.plugin' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/pytest_base_url/plugin.py'>
+          plugin_name: base_url
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=5 _state='suspended' tmpfile=<EncodedFile name="<_io.FileIO name=6 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=7 _state='suspended' tmpfile=<EncodedFile name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=3 _state='started' tmpfile=<_io.TextIOWrapper name='/dev/null' mode='r' encoding='utf-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          plugin_name: capturemanager
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'conftest' from '/Users/smpark/my_project/conftest.py'>
+          plugin_name: /Users/smpark/my_project/conftest.py
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          plugin_name: session
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x10421a270>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x10421aba0>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x1048167b0>
+          plugin_name: terminalreporter
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x104817380>
+          plugin_name: logging-plugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+    finish pytest_configure --> [] [hook]
+    pytest_sessionstart [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.PytestPluginManager object at 0x10340f380>
+          plugin_name: 4349555584
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.config.Config object at 0x1035c9fd0>
+          plugin_name: pytestconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.mark' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/mark/__init__.py'>
+          plugin_name: mark
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.main' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/main.py'>
+          plugin_name: main
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.runner' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/runner.py'>
+          plugin_name: runner
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.fixtures' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/fixtures.py'>
+          plugin_name: fixtures
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.helpconfig' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/helpconfig.py'>
+          plugin_name: helpconfig
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/python.py'>
+          plugin_name: python
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.terminal' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/terminal.py'>
+          plugin_name: terminal
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.debugging' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/debugging.py'>
+          plugin_name: debugging
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unittest' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/unittest.py'>
+          plugin_name: unittest
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.capture' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/capture.py'>
+          plugin_name: capture
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.skipping' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/skipping.py'>
+          plugin_name: skipping
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.legacypath' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/legacypath.py'>
+          plugin_name: legacypath
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.tmpdir' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/tmpdir.py'>
+          plugin_name: tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.monkeypatch' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/monkeypatch.py'>
+          plugin_name: monkeypatch
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.recwarn' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/recwarn.py'>
+          plugin_name: recwarn
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.pastebin' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/pastebin.py'>
+          plugin_name: pastebin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.assertion' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/assertion/__init__.py'>
+          plugin_name: assertion
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.junitxml' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/junitxml.py'>
+          plugin_name: junitxml
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.doctest' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/doctest.py'>
+          plugin_name: doctest
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.cacheprovider' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/cacheprovider.py'>
+          plugin_name: cacheprovider
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.freeze_support' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/freeze_support.py'>
+          plugin_name: freeze_support
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setuponly' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/setuponly.py'>
+          plugin_name: setuponly
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.setupplan' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/setupplan.py'>
+          plugin_name: setupplan
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.stepwise' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/stepwise.py'>
+          plugin_name: stepwise
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.warnings' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/warnings.py'>
+          plugin_name: warnings
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.logging' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/logging.py'>
+          plugin_name: logging
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.reports' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/reports.py'>
+          plugin_name: reports
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.python_path' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/python_path.py'>
+          plugin_name: python_path
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.unraisableexception' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/unraisableexception.py'>
+          plugin_name: unraisableexception
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.threadexception' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/threadexception.py'>
+          plugin_name: threadexception
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module '_pytest.faulthandler' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/_pytest/faulthandler.py'>
+          plugin_name: faulthandler
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_playwright.pytest_playwright' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/pytest_playwright/pytest_playwright.py'>
+          plugin_name: playwright
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'pytest_base_url.plugin' from '/Users/smpark/my_project/venv/lib/python3.13/site-packages/pytest_base_url/plugin.py'>
+          plugin_name: base_url
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <CaptureManager _method='fd' _global_capturing=<MultiCapture out=<FDCapture 1 oldfd=5 _state='suspended' tmpfile=<EncodedFile name="<_io.FileIO name=6 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>> err=<FDCapture 2 oldfd=7 _state='suspended' tmpfile=<EncodedFile name="<_io.FileIO name=8 mode='rb+' closefd=True>" mode='r+' encoding='utf-8'>> in_=<FDCapture 0 oldfd=3 _state='started' tmpfile=<_io.TextIOWrapper name='/dev/null' mode='r' encoding='utf-8'>> _state='suspended' _in_suspended=False> _capture_fixture=None>
+          plugin_name: capturemanager
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <module 'conftest' from '/Users/smpark/my_project/conftest.py'>
+          plugin_name: /Users/smpark/my_project/conftest.py
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+          plugin_name: session
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.LFPlugin object at 0x10421a270>
+          plugin_name: lfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.cacheprovider.NFPlugin object at 0x10421aba0>
+          plugin_name: nfplugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <class '_pytest.legacypath.LegacyTmpdirPlugin'>
+          plugin_name: legacypath-tmpdir
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.terminal.TerminalReporter object at 0x1048167b0>
+          plugin_name: terminalreporter
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.logging.LoggingPlugin object at 0x104817380>
+          plugin_name: logging-plugin
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_plugin_registered [hook]
+          plugin: <_pytest.fixtures.FixtureManager object at 0x104817e00>
+          plugin_name: funcmanage
+          manager: <_pytest.config.PytestPluginManager object at 0x10340f380>
+      finish pytest_plugin_registered --> [] [hook]
+      pytest_report_header [hook]
+          config: <_pytest.config.Config object at 0x1035c9fd0>
+          start_path: /Users/smpark/my_project
+          startdir: /Users/smpark/my_project
+      early skip of rewriting module: importlib.metadata._adapters [assertion]
+      early skip of rewriting module: importlib.metadata._text [assertion]
+      finish pytest_report_header --> [['rootdir: /Users/smpark/my_project', 'plugins: playwright-0.6.2, base-url-2.1.0'], ['using: pytest-8.3.4', 'registered third-party plugins:', '  pytest-playwright-0.6.2 at /Users/smpark/my_project/venv/lib/python3.13/site-packages/pytest_playwright/pytest_playwright.py', '  pytest-base-url-2.1.0 at /Users/smpark/my_project/venv/lib/python3.13/site-packages/pytest_base_url/plugin.py']] [hook]
+    finish pytest_sessionstart --> [] [hook]
+    pytest_collection [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+    perform_collect <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0> ['/Users/smpark/my_project'] [collection]
+        pytest_collectstart [hook]
+            collector: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        finish pytest_collectstart --> [] [hook]
+        pytest_make_collect_report [hook]
+            collector: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+        processing argument CollectionArgument(path=PosixPath('/Users/smpark/my_project'), parts=[], module_name=None) [collection]
+            pytest_collect_directory [hook]
+                path: /Users/smpark/my_project
+                parent: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=0>
+            finish pytest_collect_directory --> <Dir my_project> [hook]
+        finish pytest_make_collect_report --> <CollectReport '' lenresult=1 outcome='passed'> [hook]
+        pytest_collectreport [hook]
+            report: <CollectReport '' lenresult=1 outcome='passed'>
+        finish pytest_collectreport --> [] [hook]
+    genitems <Dir my_project> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir my_project>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir my_project>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/.DS_Store
+            path: /Users/smpark/my_project/.DS_Store
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir my_project>
+            file_path: /Users/smpark/my_project/.DS_Store
+            path: /Users/smpark/my_project/.DS_Store
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/.github
+            path: /Users/smpark/my_project/.github
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/.gitignore
+            path: /Users/smpark/my_project/.gitignore
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir my_project>
+            file_path: /Users/smpark/my_project/.gitignore
+            path: /Users/smpark/my_project/.gitignore
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/.pytest_cache
+            path: /Users/smpark/my_project/.pytest_cache
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/.vscode
+            path: /Users/smpark/my_project/.vscode
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/__pycache__
+            path: /Users/smpark/my_project/__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/conftest.py
+            path: /Users/smpark/my_project/conftest.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir my_project>
+            file_path: /Users/smpark/my_project/conftest.py
+            path: /Users/smpark/my_project/conftest.py
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/e2e
+            path: /Users/smpark/my_project/e2e
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/smpark/my_project/e2e
+            parent: <Dir my_project>
+        finish pytest_collect_directory --> <Dir e2e> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/node_modules
+            path: /Users/smpark/my_project/node_modules
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/package-lock.json
+            path: /Users/smpark/my_project/package-lock.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir my_project>
+            file_path: /Users/smpark/my_project/package-lock.json
+            path: /Users/smpark/my_project/package-lock.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/package.json
+            path: /Users/smpark/my_project/package.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir my_project>
+            file_path: /Users/smpark/my_project/package.json
+            path: /Users/smpark/my_project/package.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/playwright-report
+            path: /Users/smpark/my_project/playwright-report
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/smpark/my_project/playwright-report
+            parent: <Dir my_project>
+        finish pytest_collect_directory --> <Dir playwright-report> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/playwright.config.ts
+            path: /Users/smpark/my_project/playwright.config.ts
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir my_project>
+            file_path: /Users/smpark/my_project/playwright.config.ts
+            path: /Users/smpark/my_project/playwright.config.ts
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/pytestdebug.log
+            path: /Users/smpark/my_project/pytestdebug.log
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir my_project>
+            file_path: /Users/smpark/my_project/pytestdebug.log
+            path: /Users/smpark/my_project/pytestdebug.log
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/tests
+            path: /Users/smpark/my_project/tests
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/smpark/my_project/tests
+            parent: <Dir my_project>
+        finish pytest_collect_directory --> <Dir tests> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/tests-examples
+            path: /Users/smpark/my_project/tests-examples
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/smpark/my_project/tests-examples
+            parent: <Dir my_project>
+        finish pytest_collect_directory --> <Dir tests-examples> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace
+            path: /Users/smpark/my_project/trace
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/smpark/my_project/trace
+            parent: <Dir my_project>
+        finish pytest_collect_directory --> <Dir trace> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace.zip
+            path: /Users/smpark/my_project/trace.zip
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir my_project>
+            file_path: /Users/smpark/my_project/trace.zip
+            path: /Users/smpark/my_project/trace.zip
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/venv
+            path: /Users/smpark/my_project/venv
+        finish pytest_ignore_collect --> True [hook]
+      finish pytest_make_collect_report --> <CollectReport '.' lenresult=5 outcome='passed'> [hook]
+    genitems <Dir e2e> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir e2e>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir e2e>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/e2e/example.spec.ts
+            path: /Users/smpark/my_project/e2e/example.spec.ts
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir e2e>
+            file_path: /Users/smpark/my_project/e2e/example.spec.ts
+            path: /Users/smpark/my_project/e2e/example.spec.ts
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/e2e/test-1.spec.ts
+            path: /Users/smpark/my_project/e2e/test-1.spec.ts
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir e2e>
+            file_path: /Users/smpark/my_project/e2e/test-1.spec.ts
+            path: /Users/smpark/my_project/e2e/test-1.spec.ts
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'e2e' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'e2e' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir playwright-report> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir playwright-report>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir playwright-report>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/playwright-report/index.html
+            path: /Users/smpark/my_project/playwright-report/index.html
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir playwright-report>
+            file_path: /Users/smpark/my_project/playwright-report/index.html
+            path: /Users/smpark/my_project/playwright-report/index.html
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'playwright-report' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'playwright-report' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir tests> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir tests>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir tests>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/tests/__pycache__
+            path: /Users/smpark/my_project/tests/__pycache__
+        finish pytest_ignore_collect --> True [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/tests/test_ex.py
+            path: /Users/smpark/my_project/tests/test_ex.py
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir tests>
+            file_path: /Users/smpark/my_project/tests/test_ex.py
+            path: /Users/smpark/my_project/tests/test_ex.py
+          pytest_pycollect_makemodule [hook]
+              parent: <Dir tests>
+              module_path: /Users/smpark/my_project/tests/test_ex.py
+              path: /Users/smpark/my_project/tests/test_ex.py
+          finish pytest_pycollect_makemodule --> <Module test_ex.py> [hook]
+        finish pytest_collect_file --> [<Module test_ex.py>] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests' lenresult=1 outcome='passed'> [hook]
+    genitems <Module test_ex.py> [collection]
+      pytest_collectstart [hook]
+          collector: <Module test_ex.py>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Module test_ex.py>
+      find_module called for: test_ex [assertion]
+      matched test file '/Users/smpark/my_project/tests/test_ex.py' [assertion]
+      found cached rewritten pyc for /Users/smpark/my_project/tests/test_ex.py [assertion]
+      finish pytest_make_collect_report --> <CollectReport 'tests/test_ex.py' lenresult=0 outcome='failed'> [hook]
+      pytest_exception_interact [hook]
+          node: <Module test_ex.py>
+          call: <CallInfo when='collect' excinfo=<ExceptionInfo NameError("name 'page' is not defined") tblen=15>>
+          report: <CollectReport 'tests/test_ex.py' lenresult=0 outcome='failed'>
+      finish pytest_exception_interact --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests/test_ex.py' lenresult=0 outcome='failed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir tests-examples> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir tests-examples>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir tests-examples>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/tests-examples/demo-todo-app.spec.ts
+            path: /Users/smpark/my_project/tests-examples/demo-todo-app.spec.ts
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir tests-examples>
+            file_path: /Users/smpark/my_project/tests-examples/demo-todo-app.spec.ts
+            path: /Users/smpark/my_project/tests-examples/demo-todo-app.spec.ts
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'tests-examples' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'tests-examples' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+    genitems <Dir trace> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir trace>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir trace>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/.DS_Store
+            path: /Users/smpark/my_project/trace/.DS_Store
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir trace>
+            file_path: /Users/smpark/my_project/trace/.DS_Store
+            path: /Users/smpark/my_project/trace/.DS_Store
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources
+            path: /Users/smpark/my_project/trace/resources
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_directory [hook]
+            path: /Users/smpark/my_project/trace/resources
+            parent: <Dir trace>
+        finish pytest_collect_directory --> <Dir resources> [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/trace.network
+            path: /Users/smpark/my_project/trace/trace.network
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir trace>
+            file_path: /Users/smpark/my_project/trace/trace.network
+            path: /Users/smpark/my_project/trace/trace.network
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/trace.stacks
+            path: /Users/smpark/my_project/trace/trace.stacks
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir trace>
+            file_path: /Users/smpark/my_project/trace/trace.stacks
+            path: /Users/smpark/my_project/trace/trace.stacks
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/trace.trace
+            path: /Users/smpark/my_project/trace/trace.trace
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir trace>
+            file_path: /Users/smpark/my_project/trace/trace.trace
+            path: /Users/smpark/my_project/trace/trace.trace
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'trace' lenresult=1 outcome='passed'> [hook]
+    genitems <Dir resources> [collection]
+      pytest_collectstart [hook]
+          collector: <Dir resources>
+      finish pytest_collectstart --> [] [hook]
+      pytest_make_collect_report [hook]
+          collector: <Dir resources>
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/0e1aafe9dcfc1700e7ca5f55688ea05ba862eb41.json
+            path: /Users/smpark/my_project/trace/resources/0e1aafe9dcfc1700e7ca5f55688ea05ba862eb41.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/0e1aafe9dcfc1700e7ca5f55688ea05ba862eb41.json
+            path: /Users/smpark/my_project/trace/resources/0e1aafe9dcfc1700e7ca5f55688ea05ba862eb41.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/156ab22a5844d2b0efbc8a43c65c7be362428892.json
+            path: /Users/smpark/my_project/trace/resources/156ab22a5844d2b0efbc8a43c65c7be362428892.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/156ab22a5844d2b0efbc8a43c65c7be362428892.json
+            path: /Users/smpark/my_project/trace/resources/156ab22a5844d2b0efbc8a43c65c7be362428892.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/196109a1f500e5f5919b1ca790896e322bdfe325.dat
+            path: /Users/smpark/my_project/trace/resources/196109a1f500e5f5919b1ca790896e322bdfe325.dat
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/196109a1f500e5f5919b1ca790896e322bdfe325.dat
+            path: /Users/smpark/my_project/trace/resources/196109a1f500e5f5919b1ca790896e322bdfe325.dat
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/25525f64e22d7a0af39d1e63024686722fc69dbc.dat
+            path: /Users/smpark/my_project/trace/resources/25525f64e22d7a0af39d1e63024686722fc69dbc.dat
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/25525f64e22d7a0af39d1e63024686722fc69dbc.dat
+            path: /Users/smpark/my_project/trace/resources/25525f64e22d7a0af39d1e63024686722fc69dbc.dat
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/2ed91ae8ab47613588f4e8ea8c9da9603152c772.css
+            path: /Users/smpark/my_project/trace/resources/2ed91ae8ab47613588f4e8ea8c9da9603152c772.css
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/2ed91ae8ab47613588f4e8ea8c9da9603152c772.css
+            path: /Users/smpark/my_project/trace/resources/2ed91ae8ab47613588f4e8ea8c9da9603152c772.css
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/31fb706e6f0a7cf903b2b3112fb4866e172f5db4.txt
+            path: /Users/smpark/my_project/trace/resources/31fb706e6f0a7cf903b2b3112fb4866e172f5db4.txt
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/31fb706e6f0a7cf903b2b3112fb4866e172f5db4.txt
+            path: /Users/smpark/my_project/trace/resources/31fb706e6f0a7cf903b2b3112fb4866e172f5db4.txt
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/4ce7a8dafb4b8fe5a846cd84cd7d3343d00735a7.webp
+            path: /Users/smpark/my_project/trace/resources/4ce7a8dafb4b8fe5a846cd84cd7d3343d00735a7.webp
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/4ce7a8dafb4b8fe5a846cd84cd7d3343d00735a7.webp
+            path: /Users/smpark/my_project/trace/resources/4ce7a8dafb4b8fe5a846cd84cd7d3343d00735a7.webp
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/5ea79c5554e921f464fb7b9fd842bd1465504752.woff2
+            path: /Users/smpark/my_project/trace/resources/5ea79c5554e921f464fb7b9fd842bd1465504752.woff2
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/5ea79c5554e921f464fb7b9fd842bd1465504752.woff2
+            path: /Users/smpark/my_project/trace/resources/5ea79c5554e921f464fb7b9fd842bd1465504752.woff2
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/6af6ff7e07af9d71ef3447582e2519e7d64bfd4b.webp
+            path: /Users/smpark/my_project/trace/resources/6af6ff7e07af9d71ef3447582e2519e7d64bfd4b.webp
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/6af6ff7e07af9d71ef3447582e2519e7d64bfd4b.webp
+            path: /Users/smpark/my_project/trace/resources/6af6ff7e07af9d71ef3447582e2519e7d64bfd4b.webp
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/8a7d3e5624c67430720d9d1becd7b0c57a511d71.json
+            path: /Users/smpark/my_project/trace/resources/8a7d3e5624c67430720d9d1becd7b0c57a511d71.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/8a7d3e5624c67430720d9d1becd7b0c57a511d71.json
+            path: /Users/smpark/my_project/trace/resources/8a7d3e5624c67430720d9d1becd7b0c57a511d71.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/8ec8335676c45230d0127ee0b4de577b579f3b74.json
+            path: /Users/smpark/my_project/trace/resources/8ec8335676c45230d0127ee0b4de577b579f3b74.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/8ec8335676c45230d0127ee0b4de577b579f3b74.json
+            path: /Users/smpark/my_project/trace/resources/8ec8335676c45230d0127ee0b4de577b579f3b74.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/9a20eed1a98c11ae59209a091e6494d401a8faea.json
+            path: /Users/smpark/my_project/trace/resources/9a20eed1a98c11ae59209a091e6494d401a8faea.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/9a20eed1a98c11ae59209a091e6494d401a8faea.json
+            path: /Users/smpark/my_project/trace/resources/9a20eed1a98c11ae59209a091e6494d401a8faea.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/bd1d469414bf8263cca85c6e08ad3b5d39b28e71.css
+            path: /Users/smpark/my_project/trace/resources/bd1d469414bf8263cca85c6e08ad3b5d39b28e71.css
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/bd1d469414bf8263cca85c6e08ad3b5d39b28e71.css
+            path: /Users/smpark/my_project/trace/resources/bd1d469414bf8263cca85c6e08ad3b5d39b28e71.css
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/be8d94da9cd23c8e9d8f4d73a64dfd41dbd50a19.html
+            path: /Users/smpark/my_project/trace/resources/be8d94da9cd23c8e9d8f4d73a64dfd41dbd50a19.html
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/be8d94da9cd23c8e9d8f4d73a64dfd41dbd50a19.html
+            path: /Users/smpark/my_project/trace/resources/be8d94da9cd23c8e9d8f4d73a64dfd41dbd50a19.html
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/c69c0f5e27678dada760698583c530dcb203bed2.dat
+            path: /Users/smpark/my_project/trace/resources/c69c0f5e27678dada760698583c530dcb203bed2.dat
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/c69c0f5e27678dada760698583c530dcb203bed2.dat
+            path: /Users/smpark/my_project/trace/resources/c69c0f5e27678dada760698583c530dcb203bed2.dat
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/c9da3fade5b0bcb2ca0e47bc68f1be3a6e6e9a58.woff2
+            path: /Users/smpark/my_project/trace/resources/c9da3fade5b0bcb2ca0e47bc68f1be3a6e6e9a58.woff2
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/c9da3fade5b0bcb2ca0e47bc68f1be3a6e6e9a58.woff2
+            path: /Users/smpark/my_project/trace/resources/c9da3fade5b0bcb2ca0e47bc68f1be3a6e6e9a58.woff2
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/cad484e414d0a34b52baa190e773d79388f35ffb.json
+            path: /Users/smpark/my_project/trace/resources/cad484e414d0a34b52baa190e773d79388f35ffb.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/cad484e414d0a34b52baa190e773d79388f35ffb.json
+            path: /Users/smpark/my_project/trace/resources/cad484e414d0a34b52baa190e773d79388f35ffb.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/d488814fa127a116730563236294a40081f27de4.json
+            path: /Users/smpark/my_project/trace/resources/d488814fa127a116730563236294a40081f27de4.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/d488814fa127a116730563236294a40081f27de4.json
+            path: /Users/smpark/my_project/trace/resources/d488814fa127a116730563236294a40081f27de4.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/d8bea704e6e00a159ed3938e815d425e4bc5bd17.gif
+            path: /Users/smpark/my_project/trace/resources/d8bea704e6e00a159ed3938e815d425e4bc5bd17.gif
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/d8bea704e6e00a159ed3938e815d425e4bc5bd17.gif
+            path: /Users/smpark/my_project/trace/resources/d8bea704e6e00a159ed3938e815d425e4bc5bd17.gif
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/da39a3ee5e6b4b0d3255bfef95601890afd80709.dat
+            path: /Users/smpark/my_project/trace/resources/da39a3ee5e6b4b0d3255bfef95601890afd80709.dat
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/da39a3ee5e6b4b0d3255bfef95601890afd80709.dat
+            path: /Users/smpark/my_project/trace/resources/da39a3ee5e6b4b0d3255bfef95601890afd80709.dat
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/db4636d12050e56641a78691dea8f6617ea2d398.svg
+            path: /Users/smpark/my_project/trace/resources/db4636d12050e56641a78691dea8f6617ea2d398.svg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/db4636d12050e56641a78691dea8f6617ea2d398.svg
+            path: /Users/smpark/my_project/trace/resources/db4636d12050e56641a78691dea8f6617ea2d398.svg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/ee0e586f70c7ddcc945ffbcce2121327d8a5f207.json
+            path: /Users/smpark/my_project/trace/resources/ee0e586f70c7ddcc945ffbcce2121327d8a5f207.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/ee0e586f70c7ddcc945ffbcce2121327d8a5f207.json
+            path: /Users/smpark/my_project/trace/resources/ee0e586f70c7ddcc945ffbcce2121327d8a5f207.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/f43766a257e4e4514a3413c80b820c85ca0b3f6f.json
+            path: /Users/smpark/my_project/trace/resources/f43766a257e4e4514a3413c80b820c85ca0b3f6f.json
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/f43766a257e4e4514a3413c80b820c85ca0b3f6f.json
+            path: /Users/smpark/my_project/trace/resources/f43766a257e4e4514a3413c80b820c85ca0b3f6f.json
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/f654906e8f7302840c9aee1b4bff4b2cfccba627.dat
+            path: /Users/smpark/my_project/trace/resources/f654906e8f7302840c9aee1b4bff4b2cfccba627.dat
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/f654906e8f7302840c9aee1b4bff4b2cfccba627.dat
+            path: /Users/smpark/my_project/trace/resources/f654906e8f7302840c9aee1b4bff4b2cfccba627.dat
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/fc03b8044f8ab2648021211b680b6e70a400b367.png
+            path: /Users/smpark/my_project/trace/resources/fc03b8044f8ab2648021211b680b6e70a400b367.png
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/fc03b8044f8ab2648021211b680b6e70a400b367.png
+            path: /Users/smpark/my_project/trace/resources/fc03b8044f8ab2648021211b680b6e70a400b367.png
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492704941.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492704941.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492704941.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492704941.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705671.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705671.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705671.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705671.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705826.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705826.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705826.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705826.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705870.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705870.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705870.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705870.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705969.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705969.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705969.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492705969.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492706006.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492706006.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492706006.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492706006.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492706097.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492706097.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492706097.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492706097.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707298.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707298.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707298.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707298.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707309.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707309.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707309.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707309.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707311.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707311.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707311.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707311.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707316.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707316.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707316.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707316.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707355.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707355.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707355.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707355.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707395.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707395.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707395.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707395.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707425.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707425.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707425.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707425.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707465.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707465.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707465.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707465.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707494.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707494.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707494.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707494.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707535.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707535.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707535.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707535.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707564.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707564.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707564.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707564.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707614.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707614.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707614.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707614.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707636.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707636.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707636.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707636.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707843.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707843.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707843.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492707843.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708014.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708014.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708014.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708014.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708023.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708023.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708023.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708023.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708034.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708034.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708034.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708034.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708047.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708047.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708047.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708047.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708055.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708055.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708055.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708055.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708062.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708062.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708062.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708062.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708075.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708075.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708075.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708075.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708084.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708084.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708084.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708084.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708094.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708094.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708094.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708094.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708103.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708103.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708103.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708103.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708112.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708112.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708112.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708112.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708124.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708124.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708124.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708124.jpeg
+        finish pytest_collect_file --> [] [hook]
+        pytest_ignore_collect [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            collection_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708134.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708134.jpeg
+        finish pytest_ignore_collect --> None [hook]
+        pytest_collect_file [hook]
+            parent: <Dir resources>
+            file_path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708134.jpeg
+            path: /Users/smpark/my_project/trace/resources/page@8099d4eebc3c2b9396acc766b57c14ba-1734492708134.jpeg
+        finish pytest_collect_file --> [] [hook]
+      finish pytest_make_collect_report --> <CollectReport 'trace/resources' lenresult=0 outcome='passed'> [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'trace/resources' lenresult=0 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport 'trace' lenresult=1 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collectreport [hook]
+          report: <CollectReport '.' lenresult=5 outcome='passed'>
+      finish pytest_collectreport --> [] [hook]
+      pytest_collection_modifyitems [hook]
+          session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=1 testscollected=0>
+          config: <_pytest.config.Config object at 0x1035c9fd0>
+          items: []
+      finish pytest_collection_modifyitems --> [] [hook]
+      pytest_collection_finish [hook]
+          session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=1 testscollected=0>
+        pytest_report_collectionfinish [hook]
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+            items: []
+            start_path: /Users/smpark/my_project
+            startdir: /Users/smpark/my_project
+        finish pytest_report_collectionfinish --> [] [hook]
+      finish pytest_collection_finish --> [] [hook]
+    finish pytest_collection --> None [hook]
+    pytest_runtestloop [hook]
+        session: <Session  exitstatus=<ExitCode.OK: 0> testsfailed=1 testscollected=0>
+    pytest_keyboard_interrupt [hook]
+        excinfo: <ExceptionInfo Interrupted('1 error during collection') tblen=15>
+    finish pytest_keyboard_interrupt --> [] [hook]
+    pytest_sessionfinish [hook]
+        session: <Session  exitstatus=<ExitCode.INTERRUPTED: 2> testsfailed=1 testscollected=0>
+        exitstatus: 2
+      pytest_terminal_summary [hook]
+          terminalreporter: <_pytest.terminal.TerminalReporter object at 0x1048167b0>
+          exitstatus: 2
+          config: <_pytest.config.Config object at 0x1035c9fd0>
+      early skip of rewriting module: pygments [assertion]
+        pytest_report_teststatus [hook]
+            report: <CollectReport 'tests/test_ex.py' lenresult=0 outcome='failed'>
+            config: <_pytest.config.Config object at 0x1035c9fd0>
+        finish pytest_report_teststatus --> ('error', 'E', 'ERROR') [hook]
+      finish pytest_terminal_summary --> [] [hook]
+    finish pytest_sessionfinish --> [] [hook]
+    pytest_unconfigure [hook]
+        config: <_pytest.config.Config object at 0x1035c9fd0>
+    finish pytest_unconfigure --> [] [hook]

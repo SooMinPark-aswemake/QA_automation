@@ -1,0 +1,9 @@
+{
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.defaultInterpreterPath": "${smpark@suminbag-ui-MacBookPro my_project}/venv/bin/python"
+}
