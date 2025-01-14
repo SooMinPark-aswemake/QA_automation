@@ -37,7 +37,7 @@ def test_event_menu(logged_in_page: Page) -> None:
     except:
         assert False, "이벤트관리 페이지 로드 실패"
 
-def test_매출정산_menu(logged_in_page: Page) -> None:
+def test_saad_menu(logged_in_page: Page) -> None:
     """매출정산 메뉴 테스트"""
     page = logged_in_page
     
@@ -49,7 +49,7 @@ def test_매출정산_menu(logged_in_page: Page) -> None:
     except:
         assert False, "매출/정산 페이지 로드 실패"
 
-def test_공지사항관리_menu(logged_in_page: Page) -> None:
+def test_noti_menu(logged_in_page: Page) -> None:
     """공지사항관리 메뉴 테스트"""
     page = logged_in_page
     

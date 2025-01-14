@@ -3,10 +3,15 @@ from playwright.sync_api import Page, Browser, BrowserContext, sync_playwright
 from typing import Generator
 import requests
 from datetime import datetime
+import time
+import os
+from dotenv import load_dotenv
 
 def pytest_configure(config):
+    load_dotenv()
     """Slack 웹훅 URL 등록"""
-    config.slack_webhook_url = "https://hooks.slack.com/services/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"
+    config.slack_webhook_url = os.getenv('SLACK_WEBHOOK_URL')
+    config.last_request_time = 0  # 마지막 요청 시간 추적
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
 def pytest_runtest_makereport(item, call):
@@ -14,6 +19,14 @@ def pytest_runtest_makereport(item, call):
     report = outcome.get_result()
     
     if report.when == "call":
+        # Rate limiting (최소 1초 간격)
+        current_time = time.time()
+        if hasattr(item.config, "last_request_time"):
+            time_diff = current_time - item.config.last_request_time
+            if time_diff < 1:
+                time.sleep(1 - time_diff)
+        
+        print(f"테스트 실행: {item.name}")
         test_status = "성공" if report.passed else "실패"
         message = (
             f"*Playwright 테스트 결과*\n"
@@ -24,12 +37,16 @@ def pytest_runtest_makereport(item, call):
         
         if hasattr(item.config, "slack_webhook_url"):
             try:
-                requests.post(
+                response = requests.post(
                     item.config.slack_webhook_url,
-                    json={"text": message, "mrkdwn": True}
+                    json={"text": message, "mrkdwn": True},
+                    timeout=10
                 )
+                response.raise_for_status()
+                print(f"테스트 결과 전송 완료: {item.name}")
+                item.config.last_request_time = time.time()
             except Exception as e:
-                print(f"Slack 전송 실패: {str(e)}")
+                print(f"Slack 전송 실패 ({item.name}): {str(e)}")
 
 
 
@@ -77,16 +94,22 @@ def login_page(page: Page) -> Page:
 @pytest.fixture
 def logged_in_page(page: Page) -> Page:
     """로그인 상태의 페이지 제공"""
+    # 환경변수 로드
+    load_dotenv()
+    
+    # 환경변수 확인
+    id = os.getenv('qmarket_id')
+    pw = os.getenv('qmarket_pw')
+    
     # 로그인 페이지로 이동
     page.goto("https://dev-partners.qmarket.me/login")
     
     # 로그인 실행
-    page.get_by_placeholder("아이디를 입력해주세요").fill("qmarket")
-    page.get_by_placeholder("비밀번호를 입력해주세요").fill("qmarket!@#")
+    page.get_by_placeholder("아이디를 입력해주세요").fill(id)
+    page.get_by_placeholder("비밀번호를 입력해주세요").fill(pw)
+
+    # 로그인 버튼 클릭
     page.get_by_role("button", name="로그인").click()
-    
-    # 로그인 성공 확인
-    page.get_by_text("화면을 아무 곳이나 클릭해 주세요").click()
     
     return page
 
