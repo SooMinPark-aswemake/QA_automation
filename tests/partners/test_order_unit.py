@@ -2,7 +2,7 @@ import re
 import pytest
 from playwright.sync_api import Page, expect
 
-def test_orderlist(logged_in_page: Page) -> None:
+def test_orderlist(logged_in_page: Page, stop_mart_holiday) -> None:
     """주문관리 화면 테스트"""
     page = logged_in_page
 

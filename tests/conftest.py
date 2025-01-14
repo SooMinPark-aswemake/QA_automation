@@ -72,14 +72,14 @@ def browser() -> Generator[Browser, None, None]:
     browser.close()
     playwright.stop()
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def context(browser: Browser) -> Generator[BrowserContext, None, None]:
     """브라우저 컨텍스트 생성"""
     context = browser.new_context()
     yield context
     context.close()
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def page(context: BrowserContext) -> Generator[Page, None, None]:
     """새로운 페이지 생성"""
     page = context.new_page()
@@ -87,13 +87,13 @@ def page(context: BrowserContext) -> Generator[Page, None, None]:
     page.close()
 
 # 파트너스 로그인 페이지 진입 및 로그인 설정
-@pytest.fixture
+@pytest.fixture(scope="session")
 def login_page(page: Page) -> Page:
     """로그인 페이지 초기화"""
     page.goto("https://dev-partners.qmarket.me/login")
     return page
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def logged_in_page(page: Page) -> Page:
     """로그인 상태의 페이지 제공"""
     # 환경변수 로드
@@ -119,3 +119,30 @@ def logged_in_page(page: Page) -> Page:
 def base_url() -> str:
     """기본 URL 제공"""
     return "https://dev-partners.qmarket.me"
+
+@pytest.fixture(scope="session")
+def stop_mart_holiday(page: Page) -> Page:
+    """마트 휴무일 모달 노출 예외처리"""
+    try:
+        # 페이지 로드 대기
+        page.wait_for_load_state("networkidle")
+        
+        # 모달 내의 모든 p 태그 텍스트 출력하여 확인
+        modal = page.locator("div.ReactModalPortal p")
+        print("Found text:", modal.all_text_contents())
+        
+        # 부분 텍스트 매칭으로 시도
+        modal_text = page.get_by_text("배달중단", exact=False)
+        modal_text.wait_for(state="visible", timeout=5000)
+        
+        if modal_text.is_visible():
+            page.get_by_role("button", name="오늘 하루 다시 보지 않기").click()
+            print("휴무일 모달 처리 완료")
+            
+    except Exception as e:
+        print(f"휴무일 모달 처리 중 예외 발생: {str(e)}")
+        print("페이지 현재 URL:", page.url)
+        print("현재 페이지 내용:", page.content())
+        pass
+    
+    return page
