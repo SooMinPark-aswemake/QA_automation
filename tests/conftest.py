@@ -7,6 +7,7 @@ import time
 import os
 from dotenv import load_dotenv
 
+# 슬랙 메세지 전송
 def pytest_configure(config):
     load_dotenv()
     """Slack 웹훅 URL 등록"""
@@ -49,7 +50,7 @@ def pytest_runtest_makereport(item, call):
                 print(f"Slack 전송 실패 ({item.name}): {str(e)}")
 
 
-
+# Playwright 관련 설정
 @pytest.fixture(scope="session")
 def browser_context_args(browser_context_args):
     """브라우저 컨텍스트 설정"""
@@ -85,6 +86,7 @@ def page(context: BrowserContext) -> Generator[Page, None, None]:
     yield page
     page.close()
 
+# 파트너스 로그인 페이지 진입 및 로그인 설정
 @pytest.fixture
 def login_page(page: Page) -> Page:
     """로그인 페이지 초기화"""
