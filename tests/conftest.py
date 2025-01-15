@@ -29,11 +29,16 @@ def pytest_runtest_makereport(item, call):
         
         print(f"테스트 실행: {item.name}")
         test_status = "성공" if report.passed else "실패"
+        
+        # 실행 시간을 초 단위로 가져와서 소수점 2자리까지 표시
+        duration = f"{call.duration:.2f}"
+        
         message = (
             f"*Playwright 테스트 결과*\n"
             f"*테스트 이름*\n{item.name}\n"
             f"*상태*\n{test_status}\n"
-            f"*실행 시간*\n{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
+            f"*실행 시간*\n{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
+            f"*소요 시간*\n{duration}초"  # 실행 시간 추가
         )
         
         if hasattr(item.config, "slack_webhook_url"):
