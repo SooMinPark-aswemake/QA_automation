@@ -1,0 +1,1 @@
+{"code":"","message":"성공","data":[{"state":"DELIVERY_END","count":3},{"state":"DELIVERY_GOING","count":55},{"state":"DELIVERY_WAIT","count":79},{"state":"ORDER_WAIT","count":426},{"state":"REFUND_WAIT","count":3}]}
