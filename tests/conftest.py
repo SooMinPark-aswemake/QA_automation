@@ -72,7 +72,7 @@ def browser_context_args(browser_context_args):
 def browser() -> Generator[Browser, None, None]:
     """브라우저 설정"""
     playwright = sync_playwright().start()
-    browser = playwright.chromium.launch(headless=False)
+    browser = playwright.chromium.launch(headless=True)
     yield browser
     browser.close()
     playwright.stop()
@@ -149,5 +149,66 @@ def stop_mart_holiday(page: Page) -> Page:
         print("페이지 현재 URL:", page.url)
         print("현재 페이지 내용:", page.content())
         pass
+    
+    return page
+
+@pytest.fixture(scope="function", autouse=True)
+def trace_test(request, page: Page):
+    # 테스트 시작 시 tracing 시작
+    page.context.tracing.start(
+        screenshots=True,
+        snapshots=True,
+        sources=True
+    )
+    
+    yield
+    
+    # 테스트 실패 시에만 trace 저장
+    test_failed = request.node.rep_call.failed if hasattr(request.node, "rep_call") else False
+    if test_failed:
+        test_name = request.node.name
+        page.context.tracing.stop(path=f"./traces/failed_{test_name}.zip")
+    else:
+        page.context.tracing.stop()
+
+
+@pytest.fixture(scope="session")
+def wakeup_alram(page: Page) -> Page:
+    """화면 클락 알람 예외처리"""
+    try:
+        # 페이지 로드 대기
+        page.wait_for_load_state("networkidle", timeout=5000)
+        
+        # 알람 텍스트 locator 정의
+        alert_text = page.locator("p.css-1upqwjo-NewOrderAlertPopup")
+        
+        try:
+            # 요소가 있는지 먼저 확인 (짧은 타임아웃)
+            if alert_text.count() > 0:
+                # 요소가 보이는지 확인
+                if alert_text.is_visible():
+                    print("알림 팝업 발견")
+                    # 클릭 수행
+                    alert_text.click()
+                    print("알림 팝업 클릭 완료")
+                    
+                    # 클릭 후 요소가 사라졌는지 확인
+                    try:
+                        alert_text.wait_for(state="hidden", timeout=5000)
+                        print("알림 팝업이 정상적으로 사라짐")
+                    except TimeoutError:
+                        print("경고: 알림 팝업이 클릭 후에도 사라지지 않음")
+                        page.screenshot(path="error-popup-not-hidden.png")
+            else:
+                print("알림 팝업이 없음 - 정상 진행")
+                
+        except Exception as e:
+            print(f"알림 팝업 처리 중 예외 발생: {str(e)}")
+            page.screenshot(path="error-popup-processing.png")
+            
+    except Exception as e:
+        print(f"페이지 로드 중 예외 발생: {str(e)}")
+        print("현재 URL:", page.url)
+        page.screenshot(path="error-page-load.png")
     
     return page
