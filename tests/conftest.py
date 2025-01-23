@@ -32,6 +32,22 @@ def pytest_runtest_makereport(item, call):
         
         # 실행 시간을 초 단위로 가져와서 소수점 2자리까지 표시
         duration = f"{call.duration:.2f}"
+
+        # 에러 메세지 추가
+        error_message = ""
+        if report.failed:
+            if hasattr(call, 'excinfo'):
+                error_message = f"\n*에러 메시지*\n```{str(call.excinfo.value)}```"
+                
+                # 스크린샷 저장
+                try:
+                    page = item.funcargs.get('page')
+                    if page:
+                        screenshot_path = f"screenshots/failed_{item.name}_{int(time.time())}.png"
+                        page.screenshot(path=screenshot_path)
+                        error_message += f"\n*스크린샷*\n{screenshot_path}"
+                except Exception as e:
+                    print(f"스크린샷 저장 실패: {str(e)}")
         
         message = (
             f"*Playwright 테스트 결과*\n"
@@ -39,16 +55,30 @@ def pytest_runtest_makereport(item, call):
             f"*상태*\n{test_status}\n"
             f"*실행 시간*\n{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
             f"*소요 시간*\n{duration}초"  # 실행 시간 추가
+            f"{error_message}"
         )
         
         if hasattr(item.config, "slack_webhook_url"):
             try:
+                # 기본 메세지 전송
                 response = requests.post(
                     item.config.slack_webhook_url,
                     json={"text": message, "mrkdwn": True},
                     timeout=10
                 )
                 response.raise_for_status()
+
+                # 실패 시 스크린샷 파일 전송
+                if report.failed and os.path.exists(screenshot_path):
+                    with open(screenshot_path, 'rb') as file:
+                        response = requests.post(
+                            item.config.slack_webhook_url,
+                            files={'file': file},
+                            data={'initial_comment': f'{item.name} 실패 스크린샷'},
+                            timeout=10
+                        )
+                        response.raise_for_status()
+
                 print(f"테스트 결과 전송 완료: {item.name}")
                 item.config.last_request_time = time.time()
             except Exception as e:
@@ -72,7 +102,9 @@ def browser_context_args(browser_context_args):
 def browser() -> Generator[Browser, None, None]:
     """브라우저 설정"""
     playwright = sync_playwright().start()
-    browser = playwright.chromium.launch(headless=True)
+    browser = playwright.chromium.launch(
+        headless=False,
+        slow_mo=1000)
     yield browser
     browser.close()
     playwright.stop()
@@ -99,7 +131,7 @@ def login_page(page: Page) -> Page:
     return page
 
 @pytest.fixture(scope="session")
-def logged_in_page(page: Page) -> Page:
+def logged_in_page(login_page: Page) -> Page:
     """로그인 상태의 페이지 제공"""
     # 환경변수 로드
     load_dotenv()
